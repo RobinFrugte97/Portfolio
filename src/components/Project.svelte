@@ -37,7 +37,7 @@
     <div id="curtainUp" style="background-color: {selectedProject.primaryLanguage.color};" ></div>
     <section>
         <div id="mainWrapper" style="background-color: {selectedProject.primaryLanguage.color}">
-            <a href="/#/projects" on:click|preventDefault={() => {
+            <a href="/Portfolio/#/projects" on:click|preventDefault={() => {
                 let curtainUp = document.getElementById('curtainUp')
                 curtainUp.classList.add('anim')
                 selectedColor.set(selectedProject.primaryLanguage.color)
