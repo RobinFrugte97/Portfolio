@@ -1,0 +1,159 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	position: relative;
+	background-color: #1e1e1e;
+}
+.languageContainer {
+	width: 106%;
+	height: 30em;
+	box-shadow: 0px 10px 30px -15px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow-x:  auto;
+	padding-left: 10%;
+}
+.languageContainer::-webkit-scrollbar {
+	height: 20px;
+	width: 100%;
+}
+.languageContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.languageContainer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.languageContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.anim {
+	animation: addCurtain .8s forwards ease;
+}
+pre {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	width: fit-content;
+	padding: 1em;
+}
+#readme a {
+	color: #BC3585;
+}
+#readme a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #BC3585;
+}
+#readme img {
+	max-width: 100%;
+}
+@keyframes tileAnimation {
+	from {
+		transform: translateX(50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes addCurtain {
+	from {
+		transform: translateY(100vh);
+	}
+	to {
+		transform: translateY(0vh);
+	}
+}
+@keyframes hideFooter {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 100;
+	}
+}
+@media (max-width: 1080px) {
+	#mainWrapper {
+		flex-direction: column !important;
+		padding: 3em 20% !important;
+		height: fit-content !important;
+	}
+	#mainWrapper img {
+		width: 50%;
+		height: auto !important;
+		margin: auto !important;
+	}
+	#mainWrapper a {
+		right: 17% !important;
+	}
+	ul {
+		height: fit-content !important;
+    	align-self: center !important;
+    	width: 10em !important;
+	}
+	#projectInfo {
+		display: flex !important;
+    	align-self: center !important;
+	}
+}
+@media (max-width: 800px) {
+	.lContainer {
+		transform: rotate(0deg) translateX(-8%) !important;
+	}
+	#mainWrapper img {
+		width: 70% !important;
+	}
+}
+@media (max-width: 570px) {
+	#tile {
+		width: 100% !important;
+    	min-width: 27em !important;
+		margin: 0 .5em !important;
+	}
+	#tile p {
+		width: 100% !important;
+		max-height: 5em !important;
+		overflow-y: hidden !important;
+	}
+	header {
+		padding-bottom: 0 !important;
+	}
+	main {
+		padding-top: 0 !important;
+	}
+	#anchors {
+		flex-direction: column !important;
+		align-self: center !important;
+		display: flex !important;
+		margin-top: 1em !important;
+		margin: 0 .5em !important;
+		height: 6em !important;
+		justify-content: space-evenly !important;
+	}
+	pre {
+		font-size: .5em !important;
+	}
+	#mainWrapper img {
+		width: 85% !important;
+	}
+	#projectInfo {
+		flex-direction: column;
+	}
+}
+.stop-scrolling {
+  	height: 100%;
+ 	 overflow: hidden;
+}
+section footer {
+	width: 100%;
+	padding-bottom: 5em;
+	bottom: 0;
+}
+#space {
+	padding: 6%;
+}
