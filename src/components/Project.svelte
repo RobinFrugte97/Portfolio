@@ -37,12 +37,12 @@
     <div id="curtainUp" style="background-color: {selectedProject.primaryLanguage.color};" ></div>
     <section>
         <div id="mainWrapper" style="background-color: {selectedProject.primaryLanguage.color}">
-            <a href="/Portfolio/#/projects" on:click|preventDefault={() => {
+            <a href="/#/projects" on:click|preventDefault={() => {
                 let curtainUp = document.getElementById('curtainUp')
                 curtainUp.classList.add('anim')
                 selectedColor.set(selectedProject.primaryLanguage.color)
                 setTimeout(() => {
-                    window.location.href = `/Portfolio/#/projects`
+                    window.location.href = `/#/projects`
                 }, 800)
             }}><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/></svg></a>
             <img src="{selectedProject.openGraphImageUrl}" alt="image of {selectedProject.name}">
