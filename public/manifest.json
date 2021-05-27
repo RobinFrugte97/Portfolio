@@ -16,6 +16,7 @@
     "start_url": "/Portfolio/",
     "scope": "/Portfolio/",
     "theme_color": "#BC3585",
-    "background_color": "##1e1e1e",
-    "display": "standalone"
+    "background_color": "#1e1e1e",
+    "display": "standalone",
+    "prefer_related_applications": true
 }
