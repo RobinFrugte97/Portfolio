@@ -10,10 +10,10 @@
 	</h1>
 
 	<nav>
-		<a href="/#/projects" on:click={() => {
+		<a href="/Portfolio/#/projects" on:click={() => {
 			selectedColor.set("")
 		}}>Projects</a>
-		<a href="/#/aboutme">About</a>
+		<a href="/Portfolio/#/aboutme">About</a>
 	</nav>
 </header>
 
