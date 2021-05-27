@@ -112,7 +112,7 @@ pre {
 @media (max-width: 570px) {
 	#tile {
 		width: 100% !important;
-    	min-width: 21.5em !important;
+    	min-width: 21em !important;
 		margin: 0 .5em !important;
 	}
 	#tile p {
@@ -143,6 +143,9 @@ pre {
 	}
 	#projectInfo {
 		flex-direction: column;
+	}
+	.lContainer h1 {
+		transform: translateX(0%) translateY(.275em);
 	}
 }
 .stop-scrolling {
