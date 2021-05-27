@@ -28,7 +28,7 @@ self.addEventListener("fetch", (event) => {
                     .then((fetchRes) => fetchRes)
                     .catch((err) => {
                         return caches.open(CORE_CACHE_NAME)
-                            .then(cache => cache.match('/index.html'))
+                            .then(cache => cache.match('/Portfolio/index.html'))
                     })
             })
     )
