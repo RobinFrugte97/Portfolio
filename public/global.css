@@ -144,6 +144,9 @@ pre {
 	#projectInfo {
 		flex-direction: column;
 	}
+	.lContainer h1 {
+		transform: translateX(0%) translateY(.275em);
+	}
 }
 .stop-scrolling {
   	height: 100%;
