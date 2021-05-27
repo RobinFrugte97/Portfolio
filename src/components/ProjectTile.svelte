@@ -37,7 +37,7 @@
     footer.style = `animation: hideFooter .5s forwards ease;`
     tempBackground.set(project.primaryLanguage.color)
     setTimeout(() => {
-        window.location.href = `/#/projects/${project.name}`
+        window.location.href = `/Portfolio/#/projects/${project.name}`
     }, 800)
 }}>
     <section>
