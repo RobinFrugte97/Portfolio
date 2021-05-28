@@ -30,14 +30,14 @@
     })
 
 </script>
-<a id="tile" href="/Portfolio/#/projects/{project.name}" bind:this={tiles} data-delay="0s" on:click|preventDefault={() => {
+<a id="tile" href="/#/projects/{project.name}" bind:this={tiles} data-delay="0s" on:click|preventDefault={() => {
     let curtain = document.getElementById('curtain')
     let footer = document.getElementById('footer')
 	curtain.style = `background-color: ${project.primaryLanguage.color}; animation: addCurtain .8s forwards ease;`
     footer.style = `animation: hideFooter .5s forwards ease;`
     tempBackground.set(project.primaryLanguage.color)
     setTimeout(() => {
-        window.location.href = `/Portfolio/#/projects/${project.name}`
+        window.location.href = `/#/projects/${project.name}`
     }, 800)
 }}>
     <section>
