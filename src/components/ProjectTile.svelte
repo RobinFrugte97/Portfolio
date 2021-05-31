@@ -33,7 +33,7 @@
 <a id="tile" href="/#/projects/{project.name}" bind:this={tiles} data-delay="0s" on:click|preventDefault={() => {
     let curtain = document.getElementById('curtain')
     let footer = document.getElementById('footer')
-	curtain.style = `background-color: ${project.primaryLanguage.color}; animation: addCurtain .8s forwards ease;`
+	curtain.style = `background-color: ${project.primaryLanguage.color}; animation: addCurtain .5s forwards ease;`
     footer.style = `animation: hideFooter .5s forwards ease;`
     tempBackground.set(project.primaryLanguage.color)
     setTimeout(() => {
