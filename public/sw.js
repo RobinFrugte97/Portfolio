@@ -17,7 +17,6 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
     const req = event.request
-    console.log(req)
     // show cached request from cache
     event.respondWith(
         caches.match(req)
