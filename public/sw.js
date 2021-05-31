@@ -1,6 +1,7 @@
 const CORE_CACHE = 1
 const CORE_CACHE_NAME = `core-v${CORE_CACHE}`
-const CORE_ASSETS = ["/Portfolio/index.html", "/Portfolio/manifest.json", "/Portfolio/offline.html", "/Portfolio/build/bundle.css", "/Portfolio/build/bundle.js", "/Portfolio/global.css"]
+const CORE_ASSETS = ["/index.html", "/manifest.json", "/offline.html", "/build/bundle.css", "/build/bundle.js", "/global.css"]
+
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -28,7 +29,7 @@ self.addEventListener("fetch", (event) => {
                     .then((fetchRes) => fetchRes)
                     .catch((err) => {
                         return caches.open(CORE_CACHE_NAME)
-                            .then(cache => cache.match('/Portfolio/index.html'))
+                            .then(cache => cache.match('/index.html'))
                     })
             })
     )
