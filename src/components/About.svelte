@@ -3,7 +3,7 @@
 
 </script>
 
-<h1>About me</h1>
+<h1>Hi! My name is Robin Frugte</h1>
 <img src="./assets/images/Mugshot.jpg" alt="Mugshot Robin">
 
 <style>
