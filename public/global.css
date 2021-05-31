@@ -116,6 +116,15 @@ pre {
 		display: flex !important;
     	align-self: center !important;
 	}
+	#mugshot {
+		flex-direction: column !important;
+		width: 100% !important;
+	}
+	#mugshot p {
+		width: 80% !important;
+		text-align: center !important;
+		max-width: 30em;
+	}
 }
 @media (max-width: 800px) {
 	.lContainer {
