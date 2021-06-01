@@ -67,11 +67,13 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <div id="skills" bind:this={skills}>
             <h2>My skills</h2>
-            <img class="skill" src="" alt="">
-            <img class="skill" src="" alt="">
-            <img class="skill" src="" alt="">
-            <img class="skill" src="" alt="">
-            <img class="skill" src="" alt="">
+            <div id="iconContainer">
+                <img class="skill" src="/assets/images/icons/Svelte_Logo.svg" alt="Svelte icon">
+                <img class="skill" src="/assets/images/icons/JavaScript_Logo.svg" alt="Javascript icon">
+                <img class="skill" src="/assets/images/icons/HTML5_Logo.svg" alt="HTML icon">
+                <img class="skill" src="/assets/images/icons/CSS3_Logo.svg" alt="CSS icon">
+                <img class="skill" src="/assets/images/icons/Git_icon.svg" alt="Git icon">
+            </div>
         </div>
     </section>
 </div>
@@ -120,9 +122,8 @@
     height: calc(100vh - 20em);
 }
 #skillset img {
-    width: 5em;
-    height: 5em;
-    background-color: red;
+    width: 7.5em;
+    height: 7.5em;
 }
 #skills {
     opacity: 0;
@@ -147,12 +148,17 @@
 #socials path {
     fill: white;
 }
+#iconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 span {
     color: #BC3585;
     text-transform: uppercase;
-
 }
 h2 {
+    font-size: 2em;
     font-family: monospace;
 }
 

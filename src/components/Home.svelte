@@ -28,6 +28,9 @@
         javascriptProjects = categoryProjects.javascript
         htmlProjects = categoryProjects.html
         cssProjects = categoryProjects.css
+
+        document.getElementById('footer').style.display = "flex"
+
     })
 </script>
 
