@@ -93,6 +93,14 @@ pre {
 		transform: translateX(0%);
 	}
 }
+@keyframes layoutChange {
+	0% {
+		flex-direction: column;
+	}
+	100% {
+		flex-direction: row;
+	}
+}
 @media (max-width: 1080px) {
 	#mainWrapper {
 		flex-direction: column !important;

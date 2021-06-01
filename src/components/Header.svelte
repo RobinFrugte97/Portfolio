@@ -54,6 +54,7 @@
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 2em;
+		height: 104px;
 	}
     #desktop h1 {
 		font-family: monospace;
