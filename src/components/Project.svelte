@@ -138,7 +138,7 @@
         width: 100vw;
         position: fixed;
         z-index: 5;
-        animation: removeCurtain .8s .2s forwards ease;
+        animation: removeCurtain .5s .2s forwards ease;
     }
     #curtainUp {
         height: 100vh;
