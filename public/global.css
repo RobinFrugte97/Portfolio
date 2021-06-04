@@ -32,7 +32,7 @@ body {
   background: #555;
 }
 .anim {
-	animation: addCurtain .8s forwards ease;
+	animation: addCurtain .5s forwards ease;
 }
 pre {
 	background-color: rgba(0, 0, 0, 0.5);
