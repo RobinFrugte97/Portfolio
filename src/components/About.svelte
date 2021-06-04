@@ -35,6 +35,7 @@
                     skillset.style.height = "calc(100vh - 175px)"
                     skillset.style.animation = `tileAnimation .5s 1s forwards ease`
                     socials.style.animation = `hideFooter .5s 1s forwards ease`
+                    socials.style.display = "flex"
 
                     observer.unobserve(entry.target)
                 } 
@@ -133,10 +134,10 @@
     transition: .3s ease;
 }
 #socials {
+    display: none;
     opacity: 0;
     margin-top: 1em;
     width: 10em;
-    display: flex;
     justify-content: space-evenly;
 }
 #socials svg {
