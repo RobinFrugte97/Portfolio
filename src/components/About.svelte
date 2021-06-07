@@ -176,15 +176,5 @@ h2 {
     font-size: 2em;
     font-family: monospace;
 }
-@media (max-width: 1280px) {
-    #mugshot img {
-        border-radius: 50%;
-        width: 15em;
-    }
-    #mugshot p {
-        font-family: monospace;
-        font-size: 1.25em;
-        width: 40%;
-    }
-}
+
 </style>
