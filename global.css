@@ -101,6 +101,17 @@ pre {
 		flex-direction: row;
 	}
 }
+@media (max-width: 1440px) {
+    #mugshot img {
+        border-radius: 50%!important;
+        width: 15em!important;
+    }
+    #mugshot p {
+        font-family: monospace!important;
+        font-size: 1.25em!important;
+        width: 40%!important;
+    }
+}
 @media (max-width: 1080px) {
 	#mainWrapper {
 		flex-direction: column !important;
@@ -197,12 +208,54 @@ pre {
 		width: 85% !important;
 	}
 	#projectInfo {
-		flex-direction: column;
+		flex-direction: column!important;
 	}
 	.lContainer h1 {
 		transform: translateX(0%) translateY(.275em);
 	}
+	#mugshot p {
+        max-width: 18em!important;
+    }
+    #aboutmecontainer {
+        flex-direction: column!important;
+		position: relative!important;
+		top: auto !important;
+    }
+	#skillset {
+		width: 100%!important;
+		overflow-y: auto !important;
+		padding: 0 1em !important;
+		height: auto !important;
+	}
+	#skillset > * {
+		width: 100%!important;
+	}
+	#skillset p {
+		margin-top: 6em !important;
+		width: 15em !important;
+		height: fit-content !important;
+	}
+	#skillset img {
+		height: 5em !important;
+		width: 5em !important;
+		margin: auto !important;
+	}
+	#skills {
+		height: 20em!important;
+	}
+	#footer {
+		opacity: 1 !important;
+		display: flex !important;
+	}
+	#iconContainer {
+		display: grid !important;
+    	grid-template-columns: 1fr 1fr !important;
+		width: calc(100% - 2em) !important;
+		grid-gap: 1em!important;
+	}
 }
+
+
 .stop-scrolling {
   	height: 100%;
  	 overflow: hidden;
