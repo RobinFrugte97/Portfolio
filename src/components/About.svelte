@@ -8,6 +8,7 @@
     let container
     let image
     let socials
+    let aboutText2
 
     let options = {
         root: null,
@@ -44,10 +45,16 @@
 
                     observer.unobserve(entry.target)
                 }
+                if (entry.target.id.includes("aboutText2") && entry.intersectionRatio > 0.25) {
+                    entry.target.style.animation = `tileAnimation 1s forwards ease`;
+
+                    observer.unobserve(entry.target)
+                }
             })
         }, options)
         observer.observe(skillset)
         observer.observe(skills)
+        observer.observe(aboutText2)
     })
 </script>
 
@@ -65,7 +72,7 @@
         </div>
     </section>
     <section id="skillset" bind:this={skillset}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="aboutText1">I like to experiment with new frameworks or packages for my own projects. Most recently I have been experimenting with Svelte, which this website is built with. Because Svelte is up and coming, there are a lot of interesting packages available with varying support. It is very interesting to me to see thing being added to those packages. To see the framework evolve thanks to the community.</p>
         <div id="skills" bind:this={skills}>
             <h2>My skills</h2>
             <div id="iconContainer">
@@ -76,6 +83,7 @@
                 <img class="skill" src="/assets/images/icons/Git_icon.svg" alt="Git icon">
             </div>
         </div>
+        <p id="aboutText2" bind:this={aboutText2}>Something else I've been interested in lately is web animation. Using Intersection Observer or just plain CSS animations on navigation, I love experimenting with that stuff.</p>
     </section>
 </div>
 
@@ -131,6 +139,11 @@
     margin-top: 4em ;
     margin-bottom: 4em;
     height: calc(100vh - 20em);
+    transition: .3s ease;
+}
+#aboutText2 {
+    opacity: 0;
+    margin-top: 4em!important;
     transition: .3s ease;
 }
 #socials {
