@@ -82,7 +82,7 @@
 <style>
 #mugshot img {
     border-radius: 50%;
-    width: 20em;
+    width: 15em;
 }
 #aboutmecontainer {
     flex-wrap: wrap;
@@ -104,7 +104,7 @@
 }
 #mugshot p {
     font-family: monospace;
-    font-size: 1.756em;
+    font-size: 1.25em;
     width: 40%;
 }
 #skillset {
@@ -118,7 +118,7 @@
 #skillset p {
     font-size: 1.5em;
     font-family: monospace;
-    margin-top: 16em;
+    margin-top: 10em;
     margin-bottom: 4em;
     height: calc(100vh - 20em);
 }
