@@ -77,9 +77,9 @@
             <h2>My skills</h2>
             <div id="iconContainer">
                 <img class="skill" src="/assets/images/icons/Svelte_Logo.svg" alt="Svelte icon">
-                <img class="skill" src="/assets/images/icons/JavaScript_Logo.svg" alt="Javascript icon">
-                <img class="skill" src="/assets/images/icons/HTML5_Logo.svg" alt="HTML icon">
-                <img class="skill" src="/assets/images/icons/CSS3_Logo.svg" alt="CSS icon">
+                <img class="skill" src="/assets/images/icons/JavaScript_logo.svg" alt="Javascript icon">
+                <img class="skill" src="/assets/images/icons/HTML5_logo.svg" alt="HTML icon">
+                <img class="skill" src="/assets/images/icons/CSS3_logo.svg" alt="CSS icon">
                 <img class="skill" src="/assets/images/icons/Git_icon.svg" alt="Git icon">
             </div>
         </div>
