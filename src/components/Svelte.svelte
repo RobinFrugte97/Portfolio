@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="lContainer">
+<div>
     <h1>Svelte</h1>
     <section class="languageContainer" id="svelte">
         {#each svelteProjects as project}
