@@ -65,14 +65,6 @@
         z-index: 5;
 		animation: removeCurtain .8s forwards ease;
 	}
-	@keyframes addCurtain {
-		from {
-        	transform: translateY(100vh);
-		}
-		to {
-        	transform: translateY(0vh);
-		}
-	}
 	@keyframes removeCurtain {
         from {
             transform: translateY(0);
