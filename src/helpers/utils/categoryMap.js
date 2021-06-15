@@ -1,24 +1,20 @@
 export default function mapProjectsToLanguage(projects) {
-    let catObject = {
-        "svelte": [],
-        "javascript": [],
-        "html": [],
-        "css": []
-    }
+    let dataArray = [
+        { mainLang: 'Svelte', projects: [] }, 
+        { mainLang: 'Javascript', projects: [] },
+        { mainLang: 'HTML', projects: [] },
+        { mainLang: 'CSS', projects: [] }
+        
+    ]
     projects.forEach(project => {
-        if (project.primaryLanguage.name == "Svelte") {
-            catObject.svelte.push(project)
-        } else if (project.primaryLanguage.name == "HTML") {
-            catObject.html.push(project)
-        } else if (project.primaryLanguage.name == "CSS") {
-            catObject.css.push(project)
-        } else if (project.primaryLanguage.name == "EJS"){
-            project.primaryLanguage.name = "HTML"
-            project.primaryLanguage.color = "#E34C26"
-            catObject.html.push(project)
-        } else {
-            catObject.javascript.push(project)
-        }
+        dataArray.forEach(data => {
+            if (data.mainLang.toLowerCase() == project.primaryLanguage.name.toLowerCase()) {
+                data.projects.push(project)
+            }
+            if (project.primaryLanguage.name.toLowerCase() == 'ejs' && data.mainLang == 'HTML') {
+                data.projects.push(project)
+            }
+        })
     })
-    return catObject
+    return dataArray
 }
