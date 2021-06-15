@@ -3,16 +3,10 @@
     import mapProjectsToLanguage from "../helpers/utils/categoryMap.js"
     import { allProjects, selectedColor } from "../stores/projects.js"
 
-	import Javascript from "./Javascript.svelte"
-	import Html from "./Html.svelte"
-	import Css from "./Css.svelte"
-	import Svelte from "./Svelte.svelte"
+	import Language from "./Language.svelte"
 
     let projects = []
-	let svelteProjects = []
-	let javascriptProjects = []
-	let htmlProjects = []
-	let cssProjects = []
+    let categorizedProjects = []
 
     onMount(async () => {
         const dataResponse = await fetch('data.json')
@@ -21,13 +15,9 @@
         allProjects.set(projects)
 
         // categorize projects into languages
-        let categoryProjects = mapProjectsToLanguage(projects)
+        categorizedProjects = mapProjectsToLanguage(projects)
 
-
-        svelteProjects = categoryProjects.svelte
-        javascriptProjects = categoryProjects.javascript
-        htmlProjects = categoryProjects.html
-        cssProjects = categoryProjects.css
+        console.log(categorizedProjects)
 
         document.getElementById('footer').style.display = "flex"
 
@@ -35,10 +25,9 @@
 </script>
 
 <main>
-	<Svelte bind:svelteProjects />
-	<Javascript bind:javascriptProjects />
-	<Html bind:htmlProjects />
-	<Css bind:cssProjects />
+    {#each categorizedProjects as language}
+         <Language bind:language/>
+    {/each}
 </main>
 {#if selectedColor}
 	<div id="curtainDown" style="background-color: {$selectedColor};"></div>
@@ -64,14 +53,6 @@
         position: fixed;
         z-index: 5;
 		animation: removeCurtain .8s forwards ease;
-	}
-	@keyframes addCurtain {
-		from {
-        	transform: translateY(100vh);
-		}
-		to {
-        	transform: translateY(0vh);
-		}
 	}
 	@keyframes removeCurtain {
         from {
