@@ -3,8 +3,6 @@
 
     import ProjectTile from "../components/ProjectTile.svelte"
 
-    console.log(language)
-
 </script>
 
 <div id="{language.mainLang.toLowerCase()}-container">
@@ -19,5 +17,17 @@
 
 
 <style>
-    
+    div {
+        width: 100%;
+        display: flex;
+	    flex-direction: column;
+    }
+    h1 {
+        font-size: 3.5em;
+	    margin-bottom: 0;
+        font-family: monospace;
+        font-style: normal;
+        font-weight: 1000;
+        transform: translateX(15%) translateY(.275em);
+    }
 </style>
