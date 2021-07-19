@@ -2,9 +2,10 @@ export default function mapProjectsToLanguage(projects) {
     let dataArray = [
         { mainLang: 'Svelte', projects: [] }, 
         { mainLang: 'Javascript', projects: [] },
+        { mainLang: 'Typescript', projects: [] },
         { mainLang: 'HTML', projects: [] },
         { mainLang: 'CSS', projects: [] }
-        
+
     ]
     projects.forEach(project => {
         dataArray.forEach(data => {

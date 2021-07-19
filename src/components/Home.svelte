@@ -17,6 +17,8 @@
         // categorize projects into languages
         categorizedProjects = mapProjectsToLanguage(projects)
 
+        console.log(categorizedProjects)
+
         document.getElementById('footer').style.display = "flex"
 
     })
