@@ -294,10 +294,9 @@ section footer {
 
 #html-header {
 	color: #E34C26;
-	align-self: flex-end;
 }
 #html-container {
-	transform: rotate(3deg) translateX(-8%);
+	transform: rotate(-3deg) translateX(-8%);
 }
 #html-bar {
 	background-color: #E34C26;
@@ -305,10 +304,22 @@ section footer {
 
 #css-header {
 	color: #563D7C;
+	align-self: flex-end;
 }
 #css-container {
-	transform: rotate(-3deg) translateX(-8%);
+	transform: rotate(3deg) translateX(-8%);
 }
 #css-bar {
 	background-color: #563D7C;
+}
+
+#typescript-header {
+	color: #2b7489;
+	align-self: flex-end;
+}
+#typescript-container {
+	transform: rotate(3deg) translateX(-8%);
+}
+#typescript-bar {
+	background-color: #2b7489;
 }
